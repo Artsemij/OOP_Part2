@@ -75,15 +75,17 @@ class Wall {
 //прохождения всех препятствий каждым участником. Если участник не смог пройти одно из препятствий, 
 //мы прерываем прохождение для этого участника и переходим к следующему. 
 //Если участник успешно проходит все препятствия, выводим соответствующее сообщение.
+
+
 public class Main {
     public static void main(String[] args) {
-        Participant[] participants = {
+        public Participant[] participants = {
                 new Human("Иван", 1000, 2),
                 new Cat("Барсик", 500, 3),
                 new Robot("Робот", 2000, 1)
         };
 
-        Obstacle[] obstacles = {
+        public Obstacle[] obstacles = {
                 new Track(800),
                 new Wall(2),
                 new Track(1500),
